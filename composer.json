@@ -1,6 +1,6 @@
 {
     "name": "frastel/puppet-composer-installer",
-    "description": "Prototype of installing original Puppet modules with Composer into one modules directory ",
+    "description": "Prototype of installing original Puppet modules with Composer into one modules directory",
     "license": "MIT",
     "require": {
         "jfryman/puppet-nginx":      "dev-master",
