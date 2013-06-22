@@ -1,0 +1,72 @@
+{
+    "name": "frastel/puppet-composer-installer",
+    "description": "Prototype of installing original Puppet modules with Composer into one modules directory ",
+    "license": "MIT",
+    "require": {
+        "jfryman/puppet-nginx":      "dev-master",
+        "puppetlabs/postgresql":     "2.2.1",
+        "frastel/puppet-phpmyadmin": "dev-master",
+        "frastel/puppet-symfony":    "dev-master"
+    },
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-0": {
+            "Frastel\\": "src/"
+        }
+    },
+    "scripts": {
+        "post-install-cmd": "Frastel\\Composer\\PuppetModule\\Installer::build",
+        "post-update-cmd": "Frastel\\Composer\\PuppetModule\\Installer::build"
+    },
+    "extra": {
+        "modules-dir": "puppet/modules",
+        "modules": {
+            "jfryman/puppet-nginx":      "nginx",
+            "puppetlabs/postgresql":     "postgresql",
+            "frastel/puppet-phpmyadmin": "phpmyadmin",
+            "frastel/puppet-symfony":    "symfony"
+        }
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/frastel/puppet-nginx"
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "puppetlabs/postgresql",
+                "version": "2.2.1",
+                "source": {
+                    "url": "git://github.com/puppetlabs/puppetlabs-postgresql.git",
+                    "type": "git",
+                    "reference": "tags/2.2.1"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "frastel/puppet-phpmyadmin",
+                "version": "master",
+                "source": {
+                    "url": "git://github.com/frastel/puppet-phpmyadmin.git",
+                    "type": "git",
+                    "reference": "master"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "frastel/puppet-symfony",
+                "version": "master",
+                "source": {
+                    "url": "git://github.com/frastel/puppet-symfony.git",
+                    "type": "git",
+                    "reference": "master"
+                }
+            }
+        }
+    ]
+}
