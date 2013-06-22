@@ -1,1 +1,3 @@
 .idea
+vendor/
+puppet/modules/
