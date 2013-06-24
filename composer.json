@@ -6,21 +6,17 @@
         "jfryman/puppet-nginx":      "dev-master",
         "puppetlabs/postgresql":     "2.2.1",
         "frastel/puppet-phpmyadmin": "dev-master",
-        "frastel/puppet-symfony":    "dev-master"
+        "frastel/puppet-symfony":    "dev-master",
+        "frastel/puphpeteer-installer": "dev-master"
     },
     "minimum-stability": "dev",
-    "autoload": {
-        "psr-0": {
-            "Frastel\\": "src/"
-        }
-    },
     "scripts": {
-        "post-install-cmd": "Frastel\\Composer\\PuppetModule\\Installer::build",
-        "post-update-cmd": "Frastel\\Composer\\PuppetModule\\Installer::build"
+        "post-install-cmd": "Frastel\\Puphpeteer\\Installer::build",
+        "post-update-cmd": "Frastel\\Puphpeteer\\Installer::build"
     },
     "extra": {
-        "modules-dir": "puppet/modules",
-        "modules": {
+        "puppet-modules-dir": "puppet/modules",
+        "puppet-modules": {
             "jfryman/puppet-nginx":      "nginx",
             "puppetlabs/postgresql":     "postgresql",
             "frastel/puppet-phpmyadmin": "phpmyadmin",
