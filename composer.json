@@ -3,7 +3,7 @@
     "description": "Prototype of installing original Puppet modules with Composer into one modules directory",
     "license": "MIT",
     "require": {
-        "jfryman/puppet-nginx":      "dev-master",
+        "jfryman/puppet-nginx":      "dev-master#264f66fa",
         "puppetlabs/postgresql":     "2.2.1",
         "frastel/puppet-phpmyadmin": "dev-master",
         "frastel/puppet-symfony":    "dev-master",
@@ -24,10 +24,6 @@
         }
     },
     "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/frastel/puppet-nginx"
-        },
         {
             "type": "package",
             "package": {

@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "191db7502d6b3d266f68271cc8807893",
+    "hash": "0ff5767918f299b5367224590fe91c7e",
     "packages": [
         {
             "name": "frastel/puphpeteer-installer",
@@ -79,12 +79,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/frastel/puppet-nginx.git",
-                "reference": "264f66faaae086deac8ba330d4781a4217627a1c"
+                "reference": "264f66fa"
             },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/frastel/puppet-nginx/zipball/264f66faaae086deac8ba330d4781a4217627a1c",
-                "reference": "264f66faaae086deac8ba330d4781a4217627a1c",
+                "reference": "264f66fa",
                 "shasum": ""
             },
             "type": "project",
