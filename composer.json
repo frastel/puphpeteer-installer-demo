@@ -48,7 +48,7 @@
                 "source": {
                     "url": "git://github.com/frastel/puppet-phpmyadmin.git",
                     "type": "git",
-                    "reference": "master"
+                    "reference": "dbfcbf6"
                 }
             }
         },

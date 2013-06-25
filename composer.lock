@@ -1,0 +1,139 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
+    ],
+    "hash": "191db7502d6b3d266f68271cc8807893",
+    "packages": [
+        {
+            "name": "frastel/puphpeteer-installer",
+            "version": "dev-master",
+            "target-dir": "Frastel/Puphpeteer",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/frastel/puphpeteer-installer.git",
+                "reference": "a157e5286afc144c930bb0789667fc98469d4abf"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/frastel/puphpeteer-installer/zipball/a157e5286afc144c930bb0789667fc98469d4abf",
+                "reference": "a157e5286afc144c930bb0789667fc98469d4abf",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "require-dev": {
+                "composer/composer": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Frastel\\Puphpeteer\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Frank Stelzer",
+                    "email": "dev@frankstelzer.de"
+                }
+            ],
+            "description": "Installs versioned Puppet modules with PHP and Composer",
+            "keywords": [
+                "composer",
+                "php",
+                "puphpet",
+                "puppet"
+            ],
+            "time": "2013-06-24 14:23:15"
+        },
+        {
+            "name": "frastel/puppet-phpmyadmin",
+            "version": "master",
+            "source": {
+                "type": "git",
+                "url": "git://github.com/frastel/puppet-phpmyadmin.git",
+                "reference": "dbfcbf6"
+            },
+            "type": "library",
+            "time": "2013-05-31 22:08:10"
+        },
+        {
+            "name": "frastel/puppet-symfony",
+            "version": "master",
+            "source": {
+                "type": "git",
+                "url": "git://github.com/frastel/puppet-symfony.git",
+                "reference": "master"
+            },
+            "type": "library",
+            "time": "2013-06-24 08:12:29"
+        },
+        {
+            "name": "jfryman/puppet-nginx",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/frastel/puppet-nginx.git",
+                "reference": "264f66faaae086deac8ba330d4781a4217627a1c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/frastel/puppet-nginx/zipball/264f66faaae086deac8ba330d4781a4217627a1c",
+                "reference": "264f66faaae086deac8ba330d4781a4217627a1c",
+                "shasum": ""
+            },
+            "type": "project",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.x-dev"
+                }
+            },
+            "license": [
+                "Apache-2.0"
+            ],
+            "description": "Puppet module for nginx installation",
+            "keywords": [
+                "nginx",
+                "puppet"
+            ],
+            "support": {
+                "source": "https://github.com/frastel/puppet-nginx/tree/master"
+            },
+            "time": "2013-05-18 13:37:27"
+        },
+        {
+            "name": "puppetlabs/postgresql",
+            "version": "2.2.1",
+            "source": {
+                "type": "git",
+                "url": "git://github.com/puppetlabs/puppetlabs-postgresql.git",
+                "reference": "tags/2.2.1"
+            },
+            "type": "library"
+        }
+    ],
+    "packages-dev": [
+
+    ],
+    "aliases": [
+
+    ],
+    "minimum-stability": "dev",
+    "stability-flags": {
+        "jfryman/puppet-nginx": 20,
+        "frastel/puppet-phpmyadmin": 20,
+        "frastel/puppet-symfony": 20,
+        "frastel/puphpeteer-installer": 20
+    },
+    "platform": [
+
+    ],
+    "platform-dev": [
+
+    ]
+}
